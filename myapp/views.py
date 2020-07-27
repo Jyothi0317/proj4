@@ -13,3 +13,6 @@ def home(request):
 def fact(request,f):
     f=int(f)
     return HttpResponse("factorial is :  {}".format(factorial(f)))
+
+def child(request):
+    return render(request,"child.html")
